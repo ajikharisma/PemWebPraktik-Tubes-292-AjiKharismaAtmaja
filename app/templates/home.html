@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Flask App{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="display-4">Selamat Datang di Website Kami</h1>
+    <p class="lead">Apakah Anda sudah memiliki akun?</p>
+    <div class="mt-4">
+        <a href="{{ url_for('main.login') }}" class="btn btn-primary btn-lg me-3">Login</a>
+        <a href="{{ url_for('main.register') }}" class="btn btn-outline-secondary btn-lg">Registrasi</a>
+    </div>
+</div>
+{% endblock %}
